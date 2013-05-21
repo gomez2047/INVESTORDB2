@@ -1,4 +1,3 @@
-﻿
 <?php
 $ldap_base="dc=afdb,dc=local";
 //Base utilisateurs de l'arbre LDAP
@@ -19,7 +18,7 @@ function ldap_logon($user, $passwd, $base, $serveur, $port) {
  
     if ($connexion_user) {
         $resultat = $connexion_serveur;
-		
+
     } else {
         $resultat = 0;
     }
@@ -31,7 +30,7 @@ $authentification = ldap_logon($login, $password, $ldap_base, $ldap_server, $lda
  
 //---------Test de l'authentification
 if($authentification==0) {
-	     echo'no';
+echo'no';
 
 } else {
      echo'yes';
