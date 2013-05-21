@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "org.afdb.app.invdb"
+        versionCode="10"
+        version   = "1.2.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>INVESTORDATABASE</name>
+
+    <description>
+        Investor Database Mobile App
+    </description>
+
+    <author href="http://afdb.org" email="h.marrakchi@afdb.org">
+        MARRAKCHI Hatem
+    </author>
+	<author email="h.marrakchi@afdb.org" href="http://www.afdb.org"> MARRAKCHI Hatem </author>
+
+	<access origin="*"/> <!-- allow local pages -->
+
+<preference name="target-device" value="universal" />
+
+<icon src="icon.png" />
+<icon src="icon.png" width="57" height="57" />
+<icon src="icon-72.png" gap:platform="ios" width="72" height="72" /> 
+ <icon src="icon_at_2x.png" width="114" height="114" /> 
+<gap:splash src="splash.png" />
+<preference name="splash-screen-duration" value="2000" />
+</widget>

@@ -115,7 +115,7 @@
 	$param = id;
 	$.ajax({
 	type:'GET',
-	url:'http://localhost:8080/InvestorDatabaseMobileApplication/meetings/listMeetingsByRoadshows',
+	url:'http://192.168.140.23:8080/investordb/meetings/listMeetingsByRoadshows',
 	dataType:'jsonp',
 	data:{'id':$param },
 	contentType:'application/json',
@@ -156,7 +156,7 @@ $("#meeting").append(div_data);
 	$param = id;
 	$.ajax({
 	type:'GET',
-	url:'http://localhost:8080/InvestorDatabaseMobileApplication/investorPortfolio/listInvestorPortfolioByInvestor',
+	url:'http://192.168.140.23:8080/investordb/investorPortfolio/listInvestorPortfolioByInvestor',
 	dataType:'jsonp',
 	data:{'id':$param},
 	contentType:'application/json',
@@ -199,7 +199,7 @@ $("#meeting").append(div_data);
 	var dataString = JSON.stringify(data);
 	$.ajax({
 	type:'POST',
-	url:'http://localhost:8080/InvestorDatabaseMobileApplication/roadshows/listRoadshows',
+	url:'http://192.168.140.23:8080/investordb/roadshows/listRoadshows',
 	dataType:'jsonp',
 	data:{data:dataString},
 	contentType:'application/json',
@@ -223,7 +223,7 @@ $("#meeting").append(div_data);
 	var dataString = JSON.stringify(data);
 	$.ajax({
 	type:'POST',
-	url:'http://localhost:8080/InvestorDatabaseMobileApplication/investor/listInvestor',
+	url:'http://192.168.140.23:8080/investordb/investor/listInvestor',
 	dataType:'jsonp',
 	data:{data:dataString},
 	contentType:'application/json',
@@ -249,7 +249,7 @@ $("#meeting").append(div_data);
 	var dataString = JSON.stringify(data);
 	$.ajax({
 	type:'POST',
-	url:'http://localhost:8080/InvestorDatabaseMobileApplication/primaryMarket/listPrimaryMarket',
+	url:'http://192.168.140.23:8080/investordb/primaryMarket/listPrimaryMarket',
 	dataType:'jsonp',
 	data:{data:dataString},
 	contentType:'application/json',
@@ -273,7 +273,7 @@ $("#meeting").append(div_data);
 	var dataString = JSON.stringify(data);
 	$.ajax({
 	type:'POST',
-	url:'http://localhost:8080/InvestorDatabaseMobileApplication/secondaryMarket/listSecondaryMarket',
+	url:'http://192.168.140.23:8080/investordb/secondaryMarket/listSecondaryMarket',
 	dataType:'jsonp',
 	data:{data:dataString},
 	contentType:'application/json',
@@ -299,7 +299,7 @@ $("#meeting").append(div_data);
 	var dataString = JSON.stringify(data);
 	$.ajax({
 	type:'POST',
-	url:'http://localhost:8080/InvestorDatabaseMobileApplication/representatives/listRepresentativesByMeeting',
+	url:'http://192.168.140.23:8080/investordb/representatives/listRepresentativesByMeeting',
 	dataType:'jsonp',
 	data:{'id':$param},
 	contentType:'application/json',
